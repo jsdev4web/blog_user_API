@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="addComment.js" defer></script> 
+    <title>Author Admin</title>
+</head>
+<body>
+    <h1>Add Comment</h1>
+
+    <p>How this works?</p>
+    <p>To add a comment sign up to the app. To verify which user is leaving a comment to the post I need the <br>username and user-id. Last you can leave a comment and the steps are labeled 1,2,3.</p>
+
+<p>-----------------------------------------------------------------------------------------------------------------------</p>
+<h3>Step 1</h3>    
+<p>Are you signed up to post? <span><a href="signUp.html"><button>Sign Up Here</button></a></span></p>
+    
+<p>---------------------------------------------------</p>
+<h3>Step 2</h3>    
+   
+<p id="myLink">What is your username and id?</p>
+     <form id="getUserName" method="GET">
+   <!--  <form id="myForm">  -->
+        <label for="user">Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="user" id="user" required><p></p>
+        <label for="user">id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="id" id="id" required><p></p>
+        <button type="submit">Get User</button>
+    </form>
+    <p></p>
+<p>---------------------------------------------------</p>
+<h3>Step 3</h3>    
+
+<!--I need to send the form data to authScript.js?  then fetch the backend 1st -->
+    <form action="/create" id="createCommentForm" method="POST" >
+   <!--  <form id="myForm">  -->
+    <p>Add Comment Below</p>
+        <label for="user">User:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="user" id="user" required><br>
+        <label for="comment">Comment:&nbsp;</label>
+        <input type="text" name="comment" id="comment" required><br>
+        <br><br>
+        <button type="submit">Submit Data</button>
+    </form>
+
+</body>
+</html>

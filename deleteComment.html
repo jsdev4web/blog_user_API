@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="deleteComment.js" defer></script> 
+    <title>Delete Comment</title>
+</head>
+<body>
+
+<!--I need to send the form data to authScript.js?  then fetch the backend 1st -->
+    <form action="/delete" id="deleteCommentForm" method="POST" >
+   <!--  <form id="myForm">  -->
+        <input type="hidden" name="_method" value="DELETE"><br>
+        <label for="delete">Delete the Comment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <br><br>
+        <button type="submit">Submit Delete</button>
+    </form>
+
+</body>
+</html>
